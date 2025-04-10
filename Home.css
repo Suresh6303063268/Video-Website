@@ -1,0 +1,51 @@
+/* Video Alignments Started */
+  
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+   /* z-index: -1;
+    pointer-events: none;*/
+
+
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      font-size: 1.2rem;
+      padding: 8px;
+    }
+  }
+  
+  
